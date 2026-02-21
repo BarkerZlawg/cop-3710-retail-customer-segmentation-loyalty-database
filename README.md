@@ -8,3 +8,6 @@ This databaes is intended to to allow retail business owners, CRM analysts, and 
 
 ## Data Sources
 The data used for this project is sourced from a public "Customer Personality Analysis" dataset found on kaggle.com. If needed, synthetic retail data will be generated to allow for proper CLV calculations and customer segmentation.
+
+## Database Application
+For this project, I plan to implement my database system using the Oracle Database through the Oracle SQL Developer desktop application. I plan to use Oracle SQL Developer to create and enforce all of the relationships within the tables, primary keys, foreign keys, and constraints.
