@@ -15,4 +15,5 @@ This document contaions the ER diagram for the Retail Customer Segmentation & Lo
 - CUSTOMER to CAMPAIGN (many-to-many)
 
 ## Revised ER Diagram
-<img width="721" height="324" alt="er_part_b" src="https://github.com/user-attachments/assets/8d126683-89e0-4d1c-84aa-bad421e6b905" />
+<img width="763" height="334" alt="image" src="https://github.com/user-attachments/assets/737548bc-7c38-44a3-bb75-4cc9251bc1c7" />
+
