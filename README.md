@@ -11,3 +11,11 @@ The data used for this project is sourced from a public "Customer Personality An
 
 ## Database Application
 For this project, I plan to implement my database system using the Oracle Database through the Oracle SQL Developer desktop application. I plan to use Oracle SQL Developer to create and enforce all of the relationships within the tables, primary keys, foreign keys, and constraints.
+
+## ER Diagram
+Please reference "database_er.md" for the completed ER diagram, or use the link in parenthesis. [iew ER Diagram](database_er.md)
+
+## How to Run
+1. Run the "create_db.sql" file.
+2. Run the "preprocess.py" file.
+3. Run the "dataload.py" file.
