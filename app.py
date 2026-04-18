@@ -209,7 +209,7 @@ def campaign_performance_screen():
             SELECT c.CampaignName, COUNT(*) AS responses
             FROM campaign c
             JOIN customer_campaign cc ON c.CampaignID = cc.CampaignID
-            WHERE cc.AcceptedFlag = '1'
+            WHERE cc.Response = 1
             GROUP BY c.CampaignName
             ORDER BY responses DESC
             """
