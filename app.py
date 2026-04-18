@@ -42,7 +42,7 @@ def view_all_cus_screen():
     with col1:
         if st.button("Generate Customer Results"):
             query = """
-            SELECT customer_id, customer_fname, customer_lname, customer_email
+            SELECT customer_id, customer_fname, customer_lname
             FROM customer
             ORDER BY customer_fname, customer_lname
             """
