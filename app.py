@@ -41,7 +41,7 @@ def view_all_cus_screen():
     with col1:
         if st.button("Generate Customer Results"):
             query = """
-            SELECT ID, Year_Birth, Education, MaritalStatusCode, Income
+            SELECT CustomerID, Year_Birth, EducationCode, MaritalStatusCode, Income
             FROM CUSTOMER
             """
             params = {}
