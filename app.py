@@ -151,23 +151,23 @@ def cus_edu_levels_screen():
             go_to("home")       
 
 
-#For the fifth feature, the function will check for the top 10 highest spending customers on the database.
-def top_spending_cus_screen():
-    st.title("Top 10 All-Time Highest Spenders")
+#For the fifth feature, the function will check for the top 10 highest purchasing customers on the database.
+def top_purchasing_cus_screen():
+    st.title("Top 10 All-Time Highest Purchasers")
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button("Generate Top 10 Spender Results"):
+        if st.button("Generate Top 10 Purchaser Results"):
             query = """
             SELECT c.CustomerID,
             SUM(
                 NVL(cp.MntWines,0) + NVL(cp.MntFruits,0) + NVL(cp.MntMeatProducts,0) +
                 NVL(cp.MntFishProducts,0) + NVL(cp.MntSweetProducts,0) + NVL(cp.MntGoldProds,0)
-            ) AS total_spent
+            ) AS total_purchased
             FROM customer c
             JOIN customer_profile cp ON c.CustomerID = cp.CustomerID
             GROUP BY c.CustomerID
-            ORDER BY total_spent DESC
+            ORDER BY total_purchased DESC
             FETCH FIRST 10 ROWS ONLY
             """
             params = {}
@@ -276,8 +276,8 @@ def home_screen():
             go_to("cus_edu_levels")
 
     with col2:
-        if st.button("View Top Spending Customers"):
-            go_to("top_spending_cus")
+        if st.button("View Top Purchasing Customers"):
+            go_to("top_pur_cus")
 
         if st.button("View Customers With No Recorded Campaign Activity"):
             go_to("customers_no_campaign")
@@ -305,8 +305,8 @@ elif st.session_state.page == "customer_purchase_history":
 elif st.session_state.page == "cus_edu_levels":
     cus_edu_levels_screen()
 
-elif st.session_state.page == "top_spending_cus":
-    top_spending_cus_screen()
+elif st.session_state.page == "top_pur_cus":
+    top_purchasing_cus_screen()
 
 elif st.session_state.page == "customers_no_campaign":
     customers_no_campaign_screen()
