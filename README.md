@@ -19,3 +19,4 @@ Please reference "database_er.md" for the completed ER diagram, or use the link 
 1. Run the "create_db.sql" file.
 2. Run the "preprocess.py" file.
 3. Run the "dataload.py" file.
+4. Verify the database is running and connected, then run "streamlit run app.py" in the terminal of "app.py".
